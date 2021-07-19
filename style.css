@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(192, 73, 73);
+}
+
+header {
+    display: flex;
+    background-color: rgb(87, 143, 31);
+}
+
+main {
+    display: flex;
+}
+
+aside {
+    background-color: darkblue;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: cornflowerblue;
+}
+
+
+footer {
+    background-color: darkturquoise;
+}

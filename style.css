@@ -6,6 +6,7 @@
   --header-color: rgb(26, 26, 26);
   --link-color: rgba(255, 255, 255, 0.521);
   --link-hover-color: rgb(113, 75, 121);
+  --footer-color: rgb(86, 103, 139);
   --main-radius: 5px;
 }
 
@@ -84,7 +85,7 @@ main {
 
 .main-content {
   flex-grow: 1;
-  padding: 30px;
+  padding: 10px 30px 60px;
   background-color: var(--third-color);
   border-top-left-radius: var(--main-radius);
 }
@@ -256,7 +257,7 @@ a:hover .hide {
 
 aside {
   width: 240px;
-  padding: 30px;
+  padding: 10px 30px 60px;
   border-top-right-radius: var(--main-radius);
   background-color: var(--forth-color);
 }
@@ -275,8 +276,13 @@ aside {
   text-align: right;
 }
 
+.contacts-list > li > i {
+  position: relative;
+  top: 3px;
+}
+
 .discord-icon {
-  margin-left: 1px;
+  left: 1px;
 }
 
 .hard-skills-list {
@@ -315,7 +321,7 @@ aside {
   width: 40%;
 }
 
-.filling {
+.scale-filling {
   background-color: var(--link-color);
   animation: filling 1s ease;
 }
@@ -332,5 +338,33 @@ aside {
 /* FOOTER */
 
 footer {
-  background-color: darkturquoise;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--footer-color);
+}
+
+.footer-year {
+  width: 100px;
+  text-align: center;
+  font-size: 37px;
+  line-height: 37px;
+  font-weight: bold;
+  color: black;
+}
+
+.footer-github > a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-github > a > i {
+  margin-right: 10px;
+  color: black;
+}
+
+.footer-rsschool > a > img {
+  width: 100px;
 }

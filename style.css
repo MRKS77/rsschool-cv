@@ -1,42 +1,79 @@
+:root {
+  --back-color: rgb(231, 231, 231);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
 
 body {
-    background-color: burlywood;
+  background-color: var(--back-color);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    margin: auto;
-    background-color: rgb(192, 73, 73);
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: auto;
 }
 
 header {
-    display: flex;
-    background-color: rgb(87, 143, 31);
+  display: flex;
+  background-color: var(--back-color);
+}
+
+.profile-photo {
+  width: 300px;
+}
+
+.name {
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.name h1,
+h2 {
+  font-family: "Questrial", sans-serif;
+}
+
+.name > h1 {
+  font-size: 70px;
+}
+
+.name > h2 {
+  font-size: 35px;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
-aside {
-    background-color: darkblue;
+.section-header {
+  font-size: 30px;
+}
+
+.section-hr {
+  width: 95%;
+  height: 3px;
+  margin: auto;
+  background-color: white;
 }
 
 .main-content {
-    flex-grow: 1;
-    background-color: cornflowerblue;
+  flex-grow: 1;
+  background-color: cornflowerblue;
 }
 
+aside {
+  width: 300px;
+  background-color: darkblue;
+}
 
 footer {
-    background-color: darkturquoise;
+  background-color: darkturquoise;
 }

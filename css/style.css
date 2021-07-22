@@ -4,10 +4,10 @@
   --third-color: rgba(149, 163, 190, 0.5);
   --forth-color: rgba(97, 137, 184, 0.5);
   --header-color: rgb(26, 26, 26);
-  --link-color: rgba(255, 255, 255, 0.521);
-  --link-hover-color: rgb(113, 75, 121);
+  --link-color: rgb(241, 241, 241);
+  --link-hover-color: rgb(86, 103, 139);
   --footer-color: rgb(86, 103, 139);
-  --main-radius: 5px;
+  --main-radius: 3px;
 }
 
 html {
@@ -90,6 +90,14 @@ main {
   border-top-left-radius: var(--main-radius);
 }
 
+article {
+  margin: 15px 0;
+}
+
+article > p {
+  margin: 10px 0;
+}
+
 .section-header {
   display: flex;
   justify-content: flex-start;
@@ -104,13 +112,6 @@ main {
   font-size: 32px;
   font-weight: 400;
   margin: 5px 0;
-}
-
-.head-icon {
-  position: relative;
-  bottom: 2px;
-  margin-left: 20px;
-  font-size: 26px;
 }
 
 .section-list > li {
@@ -174,7 +175,6 @@ main {
   text-decoration: none;
   color: var(--second-color);
   background-color: var(--link-color);
-  border-radius: 3px;
   cursor: pointer;
   transition: 0.3s ease-out;
 }
@@ -182,8 +182,6 @@ main {
 #project-grid img {
   display: block;
   width: 190px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 #project-grid p {
@@ -196,18 +194,11 @@ main {
 .hide {
   margin: 0 10px;
   font-weight: 800;
-  color: transparent;
-  transition: 0.3s ease-out;
-}
-
-a:hover .hide {
   color: var(--link-color);
-  transition: 0.3s ease-out;
 }
 
 #project-grid a:hover {
   background-color: var(--link-hover-color);
-  border-color: var(--link-hover-color);
   transition: 0.3s ease-out;
 }
 
@@ -222,7 +213,6 @@ a:hover .hide {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 3px;
   transition: 0.3s ease-out;
 }
 
@@ -241,22 +231,10 @@ a:hover .hide {
   transform: translateX(4px);
 }
 
-@media (max-width: 800px) {
-  #project-grid {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0;
-  }
-
-  #project-grid a {
-    margin: 0 0 40px 0;
-  }
-}
-
 /* ASIDE */
 
 aside {
-  width: 240px;
+  min-width: 240px;
   padding: 10px 30px 60px;
   border-top-right-radius: var(--main-radius);
   background-color: var(--forth-color);
@@ -273,6 +251,7 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 20px 0;
   text-align: right;
 }
 
@@ -335,6 +314,15 @@ aside {
   }
 }
 
+.eng-lvl {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.eng-lvl > div {
+  font-size: 2.6rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -367,4 +355,6 @@ footer {
 
 .footer-rsschool > a > img {
   width: 100px;
+  position: relative;
+  top: 3px;
 }

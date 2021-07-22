@@ -90,11 +90,11 @@ main {
   border-top-left-radius: var(--main-radius);
 }
 
-article {
+.about-me {
   margin: 15px 0;
 }
 
-article > p {
+.about-me > p {
   margin: 10px 0;
 }
 
